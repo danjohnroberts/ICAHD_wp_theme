@@ -47,9 +47,12 @@
 <div class="banner" >
   <div class="container" >
     <div class="row" >
-      <div id="logo" class="col-md-4 text-center"> <a href="/"> <img class="img-responsive aligncenter" src="<?php print get_template_directory_uri();?>/images/logo3.png"> </a> </div>
+      <div id="logo" class="col-md-4 text-center"> <a href="/">
+              <img class="img-responsive aligncenter"
+                   src="<?php echo get_theme_mod( 'icahd_header_logo' ) ? get_theme_mod( 'icahd_header_logo' ) : get_template_directory_uri() . '/images/logo3.png' ?>"> </a> </div>
       <div  class="col-md-6 logo-border"> <a href="/">
-      <p > <img  class="img-responsive " src="<?php print get_template_directory_uri();?>/images/logo_text.gif ">
+      <p > <img  class="img-responsive "
+                 src="<?php echo get_theme_mod( 'icahd_header_secondary_logo' ) ? get_theme_mod( 'icahd_header_secondary_logo' ) : get_template_directory_uri() . '/images/logo_text.gif' ?>">
         <!-- The Israeli Committee Against House Demolitions</p>
  <p class="text">הוועד הישראלי נגד הריסת בתים</p>
  <p class="text">الحركة الإسرائيلية ضد هدم البيوت -->

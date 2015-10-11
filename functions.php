@@ -587,4 +587,85 @@ if ( strpos( $url, 'jquery.js' ) ) return $url;
 return "$url' defer ";
 }
 add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 ); */
-?>
+
+
+function icahd_customizer( $wp_customize ) {
+
+    // Theme settings
+
+    $wp_customize->add_setting( 'icahd_header_logo' );
+    $wp_customize->add_setting( 'icahd_header_secondary_logo' );
+    $wp_customize->add_setting( 'icahd_primary_colour', array(
+        'default' => '#594A42', // No shorthand hex - http://buildwpyourself.com/building-theme-color-options-customizer/
+    ) );
+    $wp_customize->add_setting( 'icahd_cta_colour', array(
+        'default' => '#CC4C2A', // No shorthand hex
+    ) );
+
+
+    // Theme controls
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'icahd_header_logo', array(
+        'label'		=> 'Custom Site Logo',
+        'description' => 'Replaces the main logo used in the site header.',
+        'section'	=> 'title_tagline',
+        'settings'	=> 'icahd_header_logo',
+        'priority'	=> 20,
+    ) ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'icahd_header_secondary_logo', array(
+        'label'		=> 'Custom Secondary Logo',
+        'description' => 'Replaces the second "logo" (or text image) used in the site header.',
+        'section'	=> 'title_tagline',
+        'settings'	=> 'icahd_header_secondary_logo',
+        'priority'	=> 25,
+    ) ) );
+
+    $wp_customize->add_control(new WP_Customize_Color_Control( $wp_customize, 'icahd_primary_colour', array(
+        'label' => 'Primary Site Colour',
+        'description' => 'Used for key elements across the site.',
+        'section' => 'colors',
+        'settings' => 'icahd_primary_colour',
+        'priority' => 1,
+    ) ) );
+
+    $wp_customize->add_control(new WP_Customize_Color_Control( $wp_customize, 'icahd_cta_colour', array(
+        'label' => 'CTA Colour',
+        'description' => 'Background colour for every Call-To-Action, e.g. the Donate Now button.',
+        'section' => 'colors',
+        'settings' => 'icahd_cta_colour',
+        'priority' => 3,
+    ) ) );
+
+
+    // UK spelling for consistency
+    $wp_customize->get_section( 'colors' )->title = __( 'Colours', 'icahd' );
+}
+add_action( 'customize_register', 'icahd_customizer' );
+
+function icahd_custom_head_styles() {
+    $primaryColour = get_theme_mod( 'icahd_primary_colour' );
+    $ctaColour = get_theme_mod( 'icahd_cta_colour' );
+
+    if ( $primaryColour && $ctaColour ) :
+        ?>
+        <style type="text/css">
+            .frontpage-midsection h2, .frontpage-news_scroller h2, .frontpage-section h2, .frontpage-subscribe h2,
+            .footer,
+            #front_links ul li a {
+                background-color: <?php echo $primaryColour; ?>;
+            }
+
+            h1, h2, h3, h4, h5, h6,
+            .did-you-know p {
+                color: <?php echo $primaryColour; ?>;
+            }
+
+            .donate-top a, .woocommerce a.button.alt, .woocommerce button.button.alt, a.button.product_type_simple {
+                background: <?php echo $ctaColour; ?>;
+            }
+        </style>
+        <?php
+    endif;
+}
+add_action( 'wp_head', 'icahd_custom_head_styles' );
