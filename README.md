@@ -7,6 +7,12 @@ Issues
 ------
 [Managed on GitHub](https://github.com/danjohnroberts/ICAHD_wp_theme/issues).
 
+SASS
+----
+We use the SCSS flavour of [SASS](http://sass-lang.com/) as a CSS pre-processor. You can compile the theme's
+top-level `style.css` using any tool you choose, but it's recommended to edit `sass/style.scss` and have
+something build the CSS file from that, rather than editing it directly.
+
 Custom settings
 ---------------
 We're using the WordPress [Theme Customization API](https://codex.wordpress.org/Theme_Customization_API)
