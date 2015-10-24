@@ -56,6 +56,9 @@ You can change the names and dimensions to whatever
 you like. Enjoy!
 */
 
+
+require_once('wp_bootstrap_navwalker.php');
+
 /************* ACTIVE SIDEBARS ********************/
 
 // Sidebars & Widgetizes Areas
