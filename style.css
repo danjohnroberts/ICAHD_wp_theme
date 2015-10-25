@@ -611,3 +611,81 @@ h1.single-title {
   color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+#icahd-bootstrap-menu  {
+
+
+margin-top: 10px;
+	
+}
+#icahd-bootstrap-menu.navbar-default .navbar-nav>li>a {
+
+text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 100;
+	
+}
+
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus  {
+	
+	
+	background-color: #000;
+	
+}
+
+
+.navbar {
+	
+	margin-bottom:0px!important; 
+	min-height: 30px;
+	border-radius: 0;
+	
+}
+
+.navbar-nav>li>a {
+	
+	padding-top: 10px; 
+   padding-bottom: 10px; 
+   line-height: 10px;
+	
+}
+
+#icahd-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+}
+#icahd-bootstrap-menu.navbar-default {
+    font-size: 14px;
+    background-color: rgba(152, 76, 76, 1);
+
+}
+#icahd-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(152, 76, 76, 1);
+}
+#icahd-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#icahd-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 1);
+}
+#icahd-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#icahd-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#icahd-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 1);
+}
+#icahd-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #000000;
+}
+#icahd-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#icahd-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #000000;
+}
+#icahd-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000000;
+}
+#icahd-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#icahd-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #984c4c;
+}

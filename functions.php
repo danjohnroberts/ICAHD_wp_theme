@@ -671,4 +671,4 @@ function icahd_custom_head_styles() {
         <?php
     endif;
 }
-add_action( 'wp_head', 'icahd_custom_head_styles' );
+//add_action( 'wp_head', 'icahd_custom_head_styles' );
