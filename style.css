@@ -113,7 +113,7 @@ P, ol, ul {
   text-decoration: none;
   font-size: 15px;
   font-weight: 700;
-  font-family: dinregular;
+  font-family: dinregular, sans-serif;
   margin-bottom: 0; }
 
 .logo-border a p.text {
@@ -148,9 +148,8 @@ div.frontpage-midsection h2, div.frontpage-subscribe h2 {
 
 .frontpage-subscribe {
   background-color: #fff;
-  border-width: 1px;
-  border-style: none solid solid;
-  border-color: #333; }
+  border: 1px solid #333;
+  border-top-style: none; }
 
 .frontpage-midsection h2, .frontpage-news_scroller h2, .frontpage-section h2, .frontpage-subscribe h2 {
   padding: 4px 10px;
@@ -438,7 +437,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 200%; }
 
 .wa_chpcs_image_carousel {
-  padding: 0 0px 0px 15px !important; }
+  padding: 0 0 0 15px !important; }
 
 .wa_rhps_foo_con {
   height: 30px; }
@@ -479,6 +478,85 @@ h1.single-title {
   clear: both;
   display: block;
   margin: 0 auto; }
+
+.woocommerce div.product div.images img {
+  border: 1px solid #ccc; }
+
+.woocommerce .woocommerce-breadcrumb {
+  margin: 1em 0; }
+
+.woocommerce ul.products li.product a img {
+  border: 1px solid #ccc; }
+
+.woocommerce ul.products li.product a:hover img {
+  border: 1px solid #cc4c2a; }
+
+.woocommerce ul.products li.product h3 {
+  min-height: 40px; }
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+  min-height: 300px; }
+
+.woocommerce a.button.alt, .woocommerce button.button.alt, a.button.product_type_simple {
+  background: #cc4c2a;
+  color: #fff; }
+
+#icahd-bootstrap-menu {
+  margin-top: 10px; }
+
+#icahd-bootstrap-menu.navbar-default .navbar-nav > li > a {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 100; }
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  background-color: #000; }
+
+.navbar {
+  margin-bottom: 0 !important;
+  min-height: 30px;
+  border-radius: 0; }
+
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 10px; }
+
+#icahd-bootstrap-menu.navbar-default .navbar-brand {
+  color: white; }
+
+#icahd-bootstrap-menu.navbar-default {
+  font-size: 14px;
+  background-color: #984c4c; }
+
+#icahd-bootstrap-menu.navbar-default .navbar-nav > li > a {
+  color: white;
+  background-color: #984c4c; }
+
+#icahd-bootstrap-menu.navbar-default .navbar-nav > li > a:hover,
+#icahd-bootstrap-menu.navbar-default .navbar-nav > li > a:focus {
+  color: white;
+  background-color: black; }
+
+#icahd-bootstrap-menu.navbar-default .navbar-nav > .active > a,
+#icahd-bootstrap-menu.navbar-default .navbar-nav > .active > a:hover,
+#icahd-bootstrap-menu.navbar-default .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: black; }
+
+#icahd-bootstrap-menu.navbar-default .navbar-toggle {
+  border-color: #000000; }
+
+#icahd-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#icahd-bootstrap-menu.navbar-default .navbar-toggle:focus {
+  background-color: #000000; }
+
+#icahd-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000000; }
+
+#icahd-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#icahd-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #984c4c; }
 
 @media (min-width: 992px) {
   #front_links ul {
@@ -588,104 +666,5 @@ h1.single-title {
 
   .wa_chpcs_image_carousel {
     padding: 0 10px 10px 5px !important; } }
-.woocommerce div.product div.images img {
-  border: 1px solid #ccc; }
-
-.woocommerce .woocommerce-breadcrumb {
-  margin: 1em 0; }
-
-.woocommerce ul.products li.product a img {
-  border: 1px solid #ccc; }
-
-.woocommerce ul.products li.product a:hover img {
-  border: 1px solid #cc4c2a; }
-
-.woocommerce ul.products li.product h3 {
-  min-height: 40px; }
-
-.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-  min-height: 300px; }
-
-.woocommerce a.button.alt, .woocommerce button.button.alt, a.button.product_type_simple {
-  background: #cc4c2a;
-  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
-
-
-#icahd-bootstrap-menu  {
-
-
-margin-top: 10px;
-	
-}
-#icahd-bootstrap-menu.navbar-default .navbar-nav>li>a {
-
-text-transform: capitalize;
-    font-size: 16px;
-    font-weight: 100;
-	
-}
-
-
-.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus  {
-	
-	
-	background-color: #000;
-	
-}
-
-
-.navbar {
-	
-	margin-bottom:0px!important; 
-	min-height: 30px;
-	border-radius: 0;
-	
-}
-
-.navbar-nav>li>a {
-	
-	padding-top: 10px; 
-   padding-bottom: 10px; 
-   line-height: 10px;
-	
-}
-
-#icahd-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(255, 255, 255, 1);
-}
-#icahd-bootstrap-menu.navbar-default {
-    font-size: 14px;
-    background-color: rgba(152, 76, 76, 1);
-
-}
-#icahd-bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(152, 76, 76, 1);
-}
-#icahd-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
-#icahd-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(0, 0, 0, 1);
-}
-#icahd-bootstrap-menu.navbar-default .navbar-nav>.active>a,
-#icahd-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
-#icahd-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(0, 0, 0, 1);
-}
-#icahd-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #000000;
-}
-#icahd-bootstrap-menu.navbar-default .navbar-toggle:hover,
-#icahd-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #000000;
-}
-#icahd-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #000000;
-}
-#icahd-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
-#icahd-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #984c4c;
-}
