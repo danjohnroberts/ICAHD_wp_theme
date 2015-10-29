@@ -95,10 +95,12 @@ function wp_bootstrap_main_nav() {
     		'container' => 'false', /* container class */
     		'fallback_cb' => 'wp_bootstrap_main_nav_fallback', /* menu fallback */
     		// 'depth' => '2',  suppress lower levels for now 
-    		'walker' => new Bootstrap_walker()
+    		'walker' => new wp_bootstrap_navwalker()
     	)
     );
 }
+
+
 
 function wp_bootstrap_footer_links() { 
 	// display the wp3 menu if available
