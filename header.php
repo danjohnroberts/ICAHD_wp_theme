@@ -30,7 +30,6 @@
       <script src="<?php bloginfo('template_directory');?>/library/js/respond.min.js"></script>
     <![endif]-->
 
-<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
