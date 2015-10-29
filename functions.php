@@ -658,9 +658,11 @@ function icahd_customizer( $wp_customize ) {
 add_action( 'customize_register', 'icahd_customizer' );
 
 function icahd_custom_head_styles() {
-    $primaryColour = get_theme_mod( 'icahd_primary_colour' );
-	$secondaryColour = get_theme_mod( 'icahd_secondary_colour' );
-    $ctaColour = get_theme_mod( 'icahd_cta_colour' );
+    // For now we just repeat the default fallback values used in the theme customise setup, as I think the
+    // alterntaive is polluting the global scope with our defaults
+    $primaryColour = get_theme_mod( 'icahd_primary_colour', '#984C4C' );
+	$secondaryColour = get_theme_mod( 'icahd_secondary_colour', '#594a42' );
+    $ctaColour = get_theme_mod( 'icahd_cta_colour', '#CC4C2A' );
 
     if ( $primaryColour  && $secondaryColour  && $ctaColour) :
         ?>
