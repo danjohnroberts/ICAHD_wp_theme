@@ -36,6 +36,9 @@
 <div class="banner" >
   <div class="container" >
     <div class="row" >
+    <nav class="navbar navbar-default nav-justified navbar-fixed-top test hide">
+      <?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>  <p style=" float: right">donate | social</p>
+    </nav>
       <div id="logo" class="col-md-5 text-center"> <a href="/"> <img class="img-responsive aligncenter"
                    src="<?php echo get_theme_mod( 'icahd_header_logo' ) ? get_theme_mod( 'icahd_header_logo' ) : get_template_directory_uri() . '/images/logo3.png' ?>"> </a> </div>
       <div  class="col-md-4 logo-border"> <a href="/">

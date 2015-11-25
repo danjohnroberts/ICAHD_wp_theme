@@ -50,6 +50,38 @@
 		<![endif]-->
 		
 		<?php wp_footer(); // js scripts are inserted using this function ?>
+        
+
+
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?ver=9622850c98e852fb594b2e25db8c4237'></script>
+
+	<script>
+      $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 20) {
+          $(".test").removeClass("hide");
+		  $(".navbar-header").addClass("hide");
+        } else {
+          $(".test").addClass("hide");
+		   $(".navbar-header").removeClass("hide");
+		 
+		  
+        }
+      });
+    </script>
+    
+    <style>
+	
+	.hide {
+	dipslay: none	
+	}
+	
+	.test {
+	
+	}
+	
+	</style>
+
 
 	</body>
 
