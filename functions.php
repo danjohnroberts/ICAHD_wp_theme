@@ -601,12 +601,16 @@ function icahd_customizer( $wp_customize ) {
     $wp_customize->add_setting( 'icahd_primary_colour', array(
         'default' => '#984C4C', // No shorthand hex - http://buildwpyourself.com/building-theme-color-options-customizer/
     ) );
-	 $wp_customize->add_setting( 'icahd_secondary_colour', array(
-        'default' => '#594a42', // No shorthand hex - http://buildwpyourself.com/building-theme-color-options-customizer/
+    $wp_customize->add_setting( 'icahd_secondary_colour', array(
+        'default' => '#594a42', // No shorthand hex
     ) );
     $wp_customize->add_setting( 'icahd_cta_colour', array(
         'default' => '#CC4C2A', // No shorthand hex
     ) );
+    $wp_customize->add_setting( 'icahd_footer_extra', array(
+        'default' => 'ICAHD UK Ltd is a not-for-profit Company Limited by Guarantee – Registration Number 6060984',
+    ) );
+
 
 
     // Theme controls
@@ -625,6 +629,14 @@ function icahd_customizer( $wp_customize ) {
         'section'	=> 'title_tagline',
         'settings'	=> 'icahd_header_secondary_logo',
         'priority'	=> 25,
+    ) ) );
+
+    $wp_customize->add_control(new WP_Customize_Control( $wp_customize, 'icahd_footer_extra', array(
+        'label' => 'Footer extra text',
+        'description' => 'Secondary text (e.g. company info) to display alongside footer copyright notice.',
+        'section' => 'title_tagline',
+        'settings' => 'icahd_footer_extra',
+        'priority' => 100,
     ) ) );
 
     $wp_customize->add_control(new WP_Customize_Color_Control( $wp_customize, 'icahd_primary_colour', array(

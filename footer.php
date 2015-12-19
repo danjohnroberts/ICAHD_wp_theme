@@ -26,7 +26,7 @@
                 
                 <div class="row margin-top-10">
 					
-					<p class="pull-right" style="font-size:12px">ICAHD UK Ltd is a not-for-profit Company Limited by Guarantee – Registration Number 6060984</p>
+					<p class="pull-right" style="font-size:12px"><?= get_theme_mod('icahd_footer_extra') ?></p>
 			
 					<p style="font-size:12px" class="attribution">&copy; <?php bloginfo('name'); ?> 2015</p>
                     
