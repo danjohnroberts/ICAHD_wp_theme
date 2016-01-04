@@ -36,13 +36,11 @@
 <div class="banner" >
   <div class="container" >
     <div class="row" >
-      <div id="logo" class="col-md-5 "> <a href="/"> <img class="img-responsive "
-                   src="<?php echo get_theme_mod( 'icahd_header_logo' ) ? get_theme_mod( 'icahd_header_logo' ) : get_template_directory_uri() . '/images/logo3.png' ?>"> </a> </div>
+      <div id="logo" class="col-md-10"> 
+      
+      <a href="/"> <img class="image-responsive" src="<?php echo get_theme_mod( 'icahd_header_logo' ) ? get_theme_mod( 'icahd_header_logo' ) : get_template_directory_uri() . '/images/logo3.png' ?>"> </a> 
                    
-                   <div  class="col-md-5 logo-border"> <a href="/">
-        <p > <img  class="img-responsive "
-                 src="<?php echo get_theme_mod( 'icahd_header_secondary_logo' ) ? get_theme_mod( 'icahd_header_secondary_logo' ) : get_template_directory_uri() . '/images/logo_text.gif' ?>"> </p>
-        </a> </div>
+                  </div>
      
       <div id="right-header" class="col-md-2  text-right " >
         <div class="donate-top"><a  href="/donate-now">donate now</a></div>

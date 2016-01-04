@@ -594,14 +594,11 @@ h1.single-title {
 
   .frontpage-subscribe {
     min-height: 360px; } }
-
+	
+	
+	
 @media (max-width: 992px) {
 	
-	#logo a img {display:inherit}
-	
-	#logo {text-align: center}
-	
-
   #front_links ul li a strong {
     font-size: 1.2em !important; }
 
