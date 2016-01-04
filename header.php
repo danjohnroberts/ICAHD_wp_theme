@@ -42,14 +42,7 @@
       <div id="right-header" class="col-md-2  text-right " >
         <div class="donate-top"><a  href="/donate-now">donate now</a></div>
         <!-- <div class="donate-top"><a  href="/donate-now">newsletter</a></div> -->
-        <div id="social" class="text-left">
-          <a href="<?= get_theme_mod('icahd_facebook_url') ?>" target="_blank"
-            ><img src="<?php print get_template_directory_uri();?>/images/social-facebook.png"
-                  alt="facebook" width="45" height="45" border="0"></a>
-          <a href="<?= get_theme_mod('icahd_twitter_url') ?>" target="_blank"
-            ><img src="<?php print get_template_directory_uri();?>/images/social-twitter.png"
-                  alt="twitter" width="45" height="45"></a>
-        </div>
+        <div id="social" class="text-left"> <a href="https://www.facebook.com/pages/The-Israeli-Committee-Against-House-Demolitions-ICAHD/115169235224525" target="_blank"><img src="<?php print get_template_directory_uri();?>/images/social-facebook.png" alt="facebook" width="45" height="45" border="0"></a> <a href="https://twitter.com/icahdinfo" target="_blank"><img src="<?php print get_template_directory_uri();?>/images/social-twitter.png" alt="twitter" width="45" height="45"></a> </div>
       </div>
     </div>
   </div>

@@ -610,16 +610,10 @@ function icahd_customizer( $wp_customize ) {
     $wp_customize->add_setting( 'icahd_footer_extra', array(
         'default' => 'ICAHD UK Ltd is a not-for-profit Company Limited by Guarantee – Registration Number 6060984',
     ) );
-    $wp_customize->add_setting( 'icahd_facebook_url', array(
-        'default' => 'https://www.facebook.com/pages/The-Israeli-Committee-Against-House-Demolitions-ICAHD/115169235224525',
-    ) );
-    $wp_customize->add_setting( 'icahd_twitter_url', array(
-        'default' => 'https://twitter.com/icahdinfo',
-    ) );
 
 
 
-    // Theme controls - core branding logos & text
+    // Theme controls
 
     $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'icahd_header_logo', array(
         'label'		=> 'Custom Site Logo',
@@ -645,9 +639,6 @@ function icahd_customizer( $wp_customize ) {
         'priority' => 100,
     ) ) );
 
-
-    // Theme controls - colours
-
     $wp_customize->add_control(new WP_Customize_Color_Control( $wp_customize, 'icahd_primary_colour', array(
         'label' => 'Primary Site Colour',
         'description' => 'Used for key elements across the site.',
@@ -672,31 +663,9 @@ function icahd_customizer( $wp_customize ) {
         'priority' => 3,
     ) ) );
 
+
     // UK spelling for consistency
     $wp_customize->get_section( 'colors' )->title = __( 'Colours', 'icahd' );
-
-
-    // Theme controls - social media
-
-    $wp_customize->add_section( 'icahd_social_media' , array(
-        'title'      => __( 'Social Media', 'icahd' ),
-        'priority'   => 60,
-    ) );
-
-    $wp_customize->add_control(new WP_Customize_Control( $wp_customize, 'icahd_facebook_url', array(
-        'label' => 'Facebook page URL',
-        'section' => 'icahd_social_media',
-        'settings' => 'icahd_facebook_url',
-        'priority' => 10,
-    ) ) );
-
-    $wp_customize->add_control(new WP_Customize_Control( $wp_customize, 'icahd_twitter_url', array(
-        'label' => 'Twitter page URL',
-        'section' => 'icahd_social_media',
-        'settings' => 'icahd_twitter_url',
-        'priority' => 20,
-    ) ) );
-
 }
 add_action( 'customize_register', 'icahd_customizer' );
 
