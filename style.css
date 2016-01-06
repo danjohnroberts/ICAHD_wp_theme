@@ -594,11 +594,22 @@ h1.single-title {
 
   .frontpage-subscribe {
     min-height: 360px; } }
+<<<<<<< HEAD
 	
 	
 	
 @media (max-width: 992px) {
 	
+=======
+@media (min-width: 1200px) {
+  .ubermenu-skin-red-black .ubermenu-item-level-0 > .ubermenu-target {
+    padding-right: 20px !important;
+    padding-left: 20px !important; } }
+@media (max-width: 992px) {
+  .ubermenu-skin-red-black .ubermenu-item-level-0 > .ubermenu-target {
+    border-right-style: none !important; }
+
+>>>>>>> parent of dd4eb95... Enabled alignment for logo for full and responsive
   #front_links ul li a strong {
     font-size: 1.2em !important; }
 

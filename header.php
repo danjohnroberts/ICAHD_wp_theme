@@ -36,11 +36,16 @@
 <div class="banner" >
   <div class="container" >
     <div class="row" >
+<<<<<<< HEAD
       <div id="logo" class="col-md-10"> 
       
       <a href="/"> <img class="image-responsive" src="<?php echo get_theme_mod( 'icahd_header_logo' ) ? get_theme_mod( 'icahd_header_logo' ) : get_template_directory_uri() . '/images/logo3.png' ?>"> </a> 
                    
                   </div>
+=======
+      <div id="logo" class="col-md-10 "> <a href="/"> <img class="img-responsive "
+                   src="<?php echo get_theme_mod( 'icahd_header_logo' ) ? get_theme_mod( 'icahd_header_logo' ) : get_template_directory_uri() . '/images/logo3.png' ?>"> </a> </div>
+>>>>>>> parent of dd4eb95... Enabled alignment for logo for full and responsive
      
       <div id="right-header" class="col-md-2  text-right " >
         <div class="donate-top"><a  href="/donate-now">donate now</a></div>
