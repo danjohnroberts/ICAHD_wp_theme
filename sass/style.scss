@@ -828,6 +828,13 @@ h1.single-title {
   }
 }
 
+
+@media (min-width: 768px) {
+.navbar-nav {
+    margin-left: -30px;
+  }
+}
+
 @media (max-width: 500px) {
   .wa_rhps_image_carousel {
     padding: 0 0 0 5px !important;
