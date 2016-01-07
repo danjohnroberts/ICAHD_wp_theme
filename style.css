@@ -173,7 +173,7 @@ P, ol, ul {
 
 .frontpage-news_scroller {
   background-color: #C3BAA5;
-  min-height: 332px;
+  min-height: 331px;
 }
 
 div.frontpage-midsection h2, div.frontpage-subscribe h2 {
@@ -210,7 +210,7 @@ div.frontpage-midsection h2, div.frontpage-subscribe h2 {
 }
 
 .frontpage-midsection, .frontpage-subscribe {
-  min-height: 325px;
+  min-height: 350px;
   padding-bottom: 10px;
 }
 
