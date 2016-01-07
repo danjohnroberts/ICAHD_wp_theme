@@ -36,21 +36,20 @@
 <div class="banner" >
   <div class="container" >
     <div class="row" >
-<<<<<<< HEAD
-      <div id="logo" class="col-md-10"> 
-      
-      <a href="/"> <img class="image-responsive" src="<?php echo get_theme_mod( 'icahd_header_logo' ) ? get_theme_mod( 'icahd_header_logo' ) : get_template_directory_uri() . '/images/logo3.png' ?>"> </a> 
-                   
-                  </div>
-=======
       <div id="logo" class="col-md-10 "> <a href="/"> <img class="img-responsive "
                    src="<?php echo get_theme_mod( 'icahd_header_logo' ) ? get_theme_mod( 'icahd_header_logo' ) : get_template_directory_uri() . '/images/logo3.png' ?>"> </a> </div>
->>>>>>> parent of dd4eb95... Enabled alignment for logo for full and responsive
-     
+
       <div id="right-header" class="col-md-2  text-right " >
         <div class="donate-top"><a  href="/donate-now">donate now</a></div>
         <!-- <div class="donate-top"><a  href="/donate-now">newsletter</a></div> -->
-        <div id="social" class="text-left"> <a href="https://www.facebook.com/pages/The-Israeli-Committee-Against-House-Demolitions-ICAHD/115169235224525" target="_blank"><img src="<?php print get_template_directory_uri();?>/images/social-facebook.png" alt="facebook" width="45" height="45" border="0"></a> <a href="https://twitter.com/icahdinfo" target="_blank"><img src="<?php print get_template_directory_uri();?>/images/social-twitter.png" alt="twitter" width="45" height="45"></a> </div>
+        <div id="social" class="text-left">
+          <a href="<?= get_theme_mod('icahd_facebook_url') ?>" target="_blank"
+            ><img src="<?php print get_template_directory_uri();?>/images/social-facebook.png"
+                  alt="facebook" width="45" height="45" border="0"></a>
+          <a href="<?= get_theme_mod('icahd_twitter_url') ?>" target="_blank"
+            ><img src="<?php print get_template_directory_uri();?>/images/social-twitter.png"
+                  alt="twitter" width="45" height="45"></a>
+        </div>
       </div>
     </div>
   </div>

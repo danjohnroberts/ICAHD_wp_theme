@@ -657,7 +657,7 @@ function icahd_customizer( $wp_customize ) {
 
     $wp_customize->add_control(new WP_Customize_Color_Control( $wp_customize, 'icahd_cta_colour', array(
         'label' => 'CTA Colour',
-        'description' => 'Background colour for every Call-To-Action, e.g. the Donate Now button.',
+        'description' => 'Background colour for Call-To-Action.',
         'section' => 'colors',
         'settings' => 'icahd_cta_colour',
         'priority' => 3,
@@ -696,7 +696,7 @@ function icahd_custom_head_styles() {
             }
             
 
-            .donate-top a, .woocommerce a.button.alt, .woocommerce button.button.alt, a.button.product_type_simple {
+            .woocommerce a.button.alt, .woocommerce button.button.alt, a.button.product_type_simple {
                 background: <?php echo $ctaColour; ?>;
             }
         </style>
