@@ -734,4 +734,16 @@ function icahd_custom_head_styles() {
         <?php
     endif;
 }
+
+// Allow SVG through WordPress Media Uploader
+// https://css-tricks.com/snippets/wordpress/allow-svg-through-wordpress-media-uploader/
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+// END Allow SVG through WordPress Media Uploader
+
+
+
 add_action( 'wp_head', 'icahd_custom_head_styles' );
