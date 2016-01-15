@@ -50,6 +50,28 @@
 		<![endif]-->
 		
 		<?php wp_footer(); // js scripts are inserted using this function ?>
+        
+        <script>
+		jQuery(document).ready(function($) {
+  
+    // Fixa navbar ao ultrapassa-lo
+    var navbar = $('#icahd-bootstrap-menu'),
+    		distance = navbar.offset().top,
+        $window = $(window);
+
+    $window.scroll(function() {
+        if ($window.scrollTop() >= distance) {
+            navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
+          	//$("body").css("padding-top", "70px");
+        } else {
+            navbar.removeClass('navbar-fixed-top');
+            //$("body").css("padding-top", "0px");
+			$("#icahd-bootstrap-menu").css("margin-top", "0px");
+        }
+    });
+});
+
+</script>
 
 	</body>
 
