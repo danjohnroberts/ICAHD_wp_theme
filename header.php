@@ -62,9 +62,14 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          
           <a class="navbar-brand hidden-lg hidden-md hidden-sm" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
           <?php bloginfo('name'); ?>
-          </a> </div>
+          </a> 
+             </div>
+       
+                     
+
         <div class="collapse navbar-collapse navbar-responsive-collapse">
           <?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
         
