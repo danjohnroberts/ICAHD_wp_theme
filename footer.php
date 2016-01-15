@@ -60,18 +60,44 @@
         $window = $(window);
 
     $window.scroll(function() {
+		
+		
+		
         if ($window.scrollTop() >= distance) {
             navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
+			
+			 $("#icahd-bootstrap-menu").removeClass('shadow').addClass('shadow');
+			 
+			 $("#icahd-bootstrap-menu").css("margin-top", "10px").css("margin-top", "0px");
+		
           	//$("body").css("padding-top", "70px");
         } else {
             navbar.removeClass('navbar-fixed-top');
             //$("body").css("padding-top", "0px");
-			$("#icahd-bootstrap-menu").css("margin-top", "0px");
+			$("#icahd-bootstrap-menu").css("margin-top", "10px");
+			 $("#icahd-bootstrap-menu").removeClass('shadow')
+			
+			
+		
         }
     });
 });
 
 </script>
+
+<style>
+.shadow {
+border-bottom: 0;
+-webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+}
+#icahd-bootstrap-menu, .navbar-fixed-top
+{
+transition: all 0.2s ease-out;
+}
+
+</style>
 
 	</body>
 
