@@ -10,14 +10,14 @@
 		
 		
         if ($window.scrollTop() >= distance) {
-            navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
+            navbar.addClass('navbar-fixed-top');
 			
-			 $("#icahd-bootstrap-menu").removeClass('shadow').addClass('shadow');
+			 $("#icahd-bootstrap-menu").addClass('shadow');
 			 
-			 $("#icahd-bootstrap-menu").css("margin-top", "10px").css("margin-top", "0px");
+			 $("#icahd-bootstrap-menu").css("margin-top", "0px");
 			 
 			 
-			 $("a.sticky-logo").css("display", "none").css("display", "initial");
+			 $("a.sticky-logo").css("display", "initial");
 		
           	//$("body").css("padding-top", "70px");
         } else {
