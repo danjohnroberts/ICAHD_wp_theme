@@ -28,7 +28,7 @@
 					
 					<p class="pull-right" style="font-size:12px"><?= get_theme_mod('icahd_footer_extra') ?></p>
 			
-					<p style="font-size:12px" class="attribution">&copy; <?php bloginfo('name'); ?> 2015</p>
+					<p style="font-size:12px" class="attribution">&copy; <?php bloginfo('name'); ?> <?php echo date('Y') ?></p>
                     
                     
                        </diV>
