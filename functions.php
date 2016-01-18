@@ -741,9 +741,6 @@ function my_footer_enqueue() {
 
     wp_register_script( 'sticky-nav', get_template_directory_uri() . '/library/js/sticky-nav.js', array(), '1.0', true );
     wp_enqueue_script( 'sticky-nav' );
-	
-	wp_register_style( 'sticky-nav-style', get_template_directory_uri() . '/library/css/sticky-nav.css', array(), '20161601', 'all' );
-    wp_enqueue_style( 'sticky-nav-style' );
    
 }
 add_action( 'wp_enqueue_scripts', 'my_footer_enqueue' );
