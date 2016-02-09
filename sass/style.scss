@@ -236,18 +236,19 @@ div.frontpage-midsection h2, div.frontpage-subscribe h2 {
   color: #fff;
   padding: 10px 20px 0 0;
   margin-bottom: 5px;
-  font-weight: bold!important;
+  font-weight: bold !important;
   font-size: large;
 }
 
 .donate-top a:hover {
-	text-decoration: none;
-	color: #ccc
+  text-decoration: none;
+  color: #ccc
 }
- @media (min-width: 980px) {
-.donate-top a {
-	padding: 12px 20px 0 0!important
-}
+
+@media (min-width: 980px) {
+  .donate-top a {
+    padding: 12px 20px 0 0 !important
+  }
 }
 
 #right-header {
@@ -407,8 +408,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner {
-  margin-top: 10px;margin-bottom: 10px;
-
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #masthead {
@@ -607,9 +608,9 @@ h1.single-title {
 
 .sticky-shadow {
   border-bottom: 0;
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.75);
   transition: all 0.5s ease-out;
 }
 
