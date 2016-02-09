@@ -10,7 +10,6 @@ N.B. you should edit sass/style.scss and compile this to the top-level style.css
 for more info.
 */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,400);
-
 @font-face {
   font-family: dinregular;
   src: url(library/fonts/dinregular-webfont.eot);
@@ -18,7 +17,6 @@ for more info.
   font-weight: 400;
   font-style: normal;
 }
-
 body, html {
   font-family: "Open Sans", sans-serif !important;
   font-weight: 200;
@@ -236,20 +234,20 @@ div.frontpage-midsection h2, div.frontpage-subscribe h2 {
   color: #fff;
   padding: 10px 20px 0 0;
   margin-bottom: 5px;
-  font-weight: bold!important;
+  font-weight: bold !important;
   font-size: large;
 }
 
 .donate-top a:hover {
-	text-decoration: none;
-	color: #ccc
-}
- @media (min-width: 980px) {
-.donate-top a {
-	padding: 12px 20px 0 0!important
-}
+  text-decoration: none;
+  color: #ccc;
 }
 
+@media (min-width: 980px) {
+  .donate-top a {
+    padding: 12px 20px 0 0 !important;
+  }
+}
 #right-header {
   margin-top: 10px;
 }
@@ -407,8 +405,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner {
-  margin-top: 10px;margin-bottom: 10px;
-
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #masthead {
@@ -607,37 +605,37 @@ h1.single-title {
 
 .sticky-shadow {
   border-bottom: 0;
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.75);
   transition: all 0.5s ease-out;
 }
 
 #icahd-bootstrap-menu.navbar-default .navbar-brand {
-  color: rgba(255, 255, 255, 1);
+  color: white;
 }
 
 #icahd-bootstrap-menu.navbar-default {
   font-size: 14px;
-  background-color: rgba(152, 76, 76, 1);
+  background-color: #984c4c;
 }
 
 #icahd-bootstrap-menu.navbar-default .navbar-nav > li > a {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(152, 76, 76, 1);
+  color: white;
+  background-color: #984c4c;
 }
 
 #icahd-bootstrap-menu.navbar-default .navbar-nav > li > a:hover,
 #icahd-bootstrap-menu.navbar-default .navbar-nav > li > a:focus {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  background-color: black;
 }
 
 #icahd-bootstrap-menu.navbar-default .navbar-nav > .active > a,
 #icahd-bootstrap-menu.navbar-default .navbar-nav > .active > a:hover,
 #icahd-bootstrap-menu.navbar-default .navbar-nav > .active > a:focus {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  background-color: black;
 }
 
 #icahd-bootstrap-menu.navbar-default .navbar-toggle {
@@ -668,7 +666,6 @@ h1.single-title {
     width: 280px;
   }
 }
-
 @media (max-width: 1200px) {
   #front_links ul li a {
     height: 73px !important;
@@ -708,14 +705,12 @@ h1.single-title {
     min-height: 360px;
   }
 }
-
 @media (min-width: 1200px) {
   .ubermenu-skin-red-black .ubermenu-item-level-0 > .ubermenu-target {
     padding-right: 20px !important;
     padding-left: 20px !important;
   }
 }
-
 @media (max-width: 992px) {
   .ubermenu-skin-red-black .ubermenu-item-level-0 > .ubermenu-target {
     border-right-style: none !important;
@@ -747,7 +742,6 @@ h1.single-title {
     margin: 0 auto;
   }
 }
-
 @media (max-width: 980px) {
   .frontpage-news_scroller {
     min-height: 100%;
@@ -794,13 +788,11 @@ h1.single-title {
     right: 0;
   }
 }
-
 @media (min-width: 768px) {
   .navbar-nav {
     margin-left: -30px;
   }
 }
-
 @media (max-width: 500px) {
   .wa_rhps_image_carousel {
     padding: 0 0 0 5px !important;
