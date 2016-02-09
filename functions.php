@@ -735,6 +735,7 @@ function icahd_custom_head_styles() {
     endif;
 }
 
+
 /////////////////  DR Sticky Footer //////////////////
 
 function my_footer_enqueue() {
@@ -746,6 +747,17 @@ function my_footer_enqueue() {
 add_action( 'wp_enqueue_scripts', 'my_footer_enqueue' );
 
 /////////////////  END DR Sticky Footer //////////////////
+
+// Allow SVG through WordPress Media Uploader
+// https://css-tricks.com/snippets/wordpress/allow-svg-through-wordpress-media-uploader/
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+// END Allow SVG through WordPress Media Uploader
+
+
 
 
 add_action( 'wp_head', 'icahd_custom_head_styles' );

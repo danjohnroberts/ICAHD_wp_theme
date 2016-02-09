@@ -24,6 +24,12 @@ These pages may be helpful in explaining how this works:
 * [How to Set Up the WordPress Theme Customizer](http://buildwpyourself.com/wordpress-theme-customizer/)
 * [Building Theme Color Options with the Customizer](http://buildwpyourself.com/building-theme-color-options-customizer/)
 
+Accounts & Security
+-------------------
+We allow SVG uploads in a theme `add_filter()` override. Currently the theme is designed to be used on sites
+where all user accounts - who may upload media - are trusted. Using the theme as-is on sites where other users
+can upload files may introduce SVG-related security vulnerabilities.
+
 WordPress configuration
 -----------------------
 If you're setting up WordPress and want separate-domain multisite support, these steps should work.
